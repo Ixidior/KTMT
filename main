@@ -16,7 +16,7 @@ colorLinea = Color(0.10,0.10,0.09)
 state = nil
 baseModel = nil
 mtoi = 0.0393701
-GUIDModel = ""
+--GUIDModel = ""
 function onPickUp(cp)
 clickPlayerColor = cp
 --print(clickPlayerColor)
