@@ -249,7 +249,7 @@ function onNumberTyped( pc, n )
 	elseif n == 8 then
 		print("quita step")
 	elseif n == 9 then
-		print("suma step")
+		agregaRuta()
 	else
 		objModel = getObjectFromGUID(GUIDModel)
 print(objModel)
@@ -322,5 +322,5 @@ CUBO.setVar("GUIDNodPrev",self.getGUID())
 end
 )
 self.setLock(true)
---self.interactable = false 
+self.interactable = false 
 end
