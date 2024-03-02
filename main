@@ -337,6 +337,9 @@ obj = getObjectFromGUID(GUIDNodPrev)
 obj.call("retira_Ruta_Chain")
 self.destruct()
 else
+obj = getObjectFromGUID(GUIDNodPrev)
+obj.setLock(false)
+obj.interactable = true
 self.destruct()
 end
 end
