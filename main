@@ -316,13 +316,11 @@ if CUBO == nill then
 end
  WebRequest.get("https://raw.githubusercontent.com/Ixidior/KTMT/main/main", function(req)
 local script = req.text
-
 CUBO.setLuaScript(script)
 CUBO.setVar("GUIDModel",GUIDModel)
 CUBO.setVar("GUIDNodPrev",self.getGUID())
-
 end
+)
 self.setLock(true)
 self.interactable = false 
-)
 end
