@@ -335,7 +335,7 @@ self.destruct()
 end
 
 function retira_Ruta_Chain()
-if GUIDModel != GUIDNodPrev then
+if GUIDModel != GUIDNodPrev then 
 obj = getObjectFromGUID(GUIDNodPrev)
 obj.call("retira_Ruta_Chain")
 self.destruct()
