@@ -328,6 +328,7 @@ end
 function retira_Ruta()
 obj = getObjectFromGUID(GUIDNodPrev)
 obj.interactable = true
+obj.setLock(false)
 self.destruct()
 end
 
