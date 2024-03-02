@@ -323,5 +323,6 @@ CUBO.setVar("GUIDNodPrev",self.getGUID())
 
 end
 self.setLock(true)
+self.interactable = false 
 )
 end
