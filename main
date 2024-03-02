@@ -247,7 +247,7 @@ function onNumberTyped( pc, n )
 	elseif n == 7 then
 		
 	elseif n == 8 then
-		print("quita step")
+		retira_Ruta()
 	elseif n == 9 then
 		agregaRuta()
 	else
@@ -256,7 +256,7 @@ print(objModel)
 		objModel.setPosition({x=self.getPosition().x,y=objModel.getPosition().y,z=self.getPosition().z},false)
 		objModel.setVelocity({0,0,0})
         	objModel.setAngularVelocity({0,0,0})
-		self.destruct()
+		retira_Ruta_Chain()
 	end
 end
 
@@ -323,4 +323,27 @@ end
 )
 self.setLock(true)
 self.interactable = false 
+end
+
+function retira_Ruta()
+obj = getObjectFromGUID(GUIDNodPrev)
+obj.interactable = true
+self.destruct()
+
+
+
+end
+
+function retira_Ruta_Chain()
+if GUIDModel <> GUIDNodPrev then
+obj = getObjectFromGUID(GUIDNodPrev)
+obj.call("retira_Ruta_Chain")
+self.destruct()
+
+else
+self.destruct()
+end
+
+
+
 end
