@@ -329,9 +329,6 @@ function retira_Ruta()
 obj = getObjectFromGUID(GUIDNodPrev)
 obj.interactable = true
 self.destruct()
-
-
-
 end
 
 function retira_Ruta_Chain()
@@ -339,11 +336,7 @@ if GUIDModel != GUIDNodPrev then
 obj = getObjectFromGUID(GUIDNodPrev)
 obj.call("retira_Ruta_Chain")
 self.destruct()
-
 else
 self.destruct()
 end
-
-
-
 end
