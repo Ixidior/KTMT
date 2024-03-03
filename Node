@@ -297,7 +297,7 @@ DataModel =
 {
     mesh = "http://cloud-3.steamusercontent.com/ugc/1012691688110756316/EDD7DB9256FB51D7C625590076A0BA1B6F8287E3/",
     diffuse = "https://i.imgur.com/K1RvGML.jpg",
-    collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider3.obj",
+    collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider4.obj",
     type = 0,
     material = 0,
     specular_intensity = 0,
