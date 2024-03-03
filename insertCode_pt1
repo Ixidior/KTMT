@@ -12,7 +12,7 @@ DataObjeto =
 }
 DataModel =
 {
-    mesh = "https://raw.githubusercontent.com/Ixidior/KTMT/main/"..baseModel.."MM.obj",
+    mesh = "https://raw.githubusercontent.com/Ixidior/KTMT/main/"..state.base.x.."MM.obj",
     diffuse = "https://i.imgur.com/K1RvGML.jpg",
     collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider4.obj",
     type = 0,
