@@ -1,0 +1,10 @@
+How to update:
+-Place your miniatures on this tray and press "Update UI".
+-Only works for miniatures with extended UI (KT UI Extender).
+
+Instructions:
+-To start, select "Movement" in the context menu of each miniature.
+-Press from 1 to 6 to select the max distance for each step.
+-Press 9 to add a new step.
+-Press 8 to delete the last step.
+-Press 0 to move the miniature to the last step.
