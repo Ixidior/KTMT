@@ -22,8 +22,6 @@ clickPlayerColor = cp
 --print(clickPlayerColor)
 pickedUp = true
 startLuaCoroutine(self, "movModel")
-
-
 end
 
 function movModel()
