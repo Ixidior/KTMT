@@ -291,7 +291,7 @@ DataObjeto =
     type = "Custom_Model",
     scale = {1,1,1},
     rotation = {0, 0, 0},
-    position = {0, 5, 0}
+    position = {0, 2, 0}
 }
 DataModel =
 {
@@ -299,7 +299,10 @@ DataModel =
     diffuse = "https://i.imgur.com/K1RvGML.jpg",
     collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider3.obj",
     type = 0,
-    material = 0
+    material = 0,
+    specular_intensity = 0,
+	specular_sharpness = 7,
+	freshnel_strength = 0.4
    
 }
 if CUBO == nill then
@@ -307,12 +310,12 @@ if CUBO == nill then
         CUBO = spawnObject(DataObjeto)
 	print(CUBO.getGUID())
         CUBO.setCustomObject(DataModel)
-	CUBO.angular_drag = 0
+	CUBO.angular_drag = 0.1
 	CUBO.bounciness = 0
-	CUBO.dynamic_friction = 0
-	CUBO.drag = 0
-	CUBO.mass = 0
-	CUBO.static_friction = 0
+	CUBO.dynamic_friction = 0.7
+	CUBO.drag = 0.1
+	CUBO.mass = 1
+	CUBO.static_friction = 1
 
 end
  WebRequest.get("https://raw.githubusercontent.com/Ixidior/KTMT/main/Node", function(req)
