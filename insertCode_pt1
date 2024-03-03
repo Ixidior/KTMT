@@ -1,1 +1,48 @@
 self.addContextMenuItem("Movement", function(pc)  agregaRuta() end)
+--parte2
+function agregaRuta()
+--Actualizado KTMT
+CUBO = nill
+DataObjeto = 
+{
+    type = "Custom_Model",
+    scale = {1,1,1},
+    rotation = {0, 0, 0},
+    position = {0, 2, 0}
+}
+DataModel =
+{
+    mesh = "https://raw.githubusercontent.com/Ixidior/KTMT/main/"..baseModel.."MM.obj",
+    diffuse = "https://i.imgur.com/K1RvGML.jpg",
+    collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider4.obj",
+    type = 0,
+    material = 0,
+    specular_intensity = 0,
+	specular_sharpness = 7,
+	freshnel_strength = 0.4
+   
+}
+if CUBO == nill then
+
+        CUBO = spawnObject(DataObjeto)
+	print(CUBO.getGUID())
+        CUBO.setCustomObject(DataModel)
+	CUBO.angular_drag = 0.1
+	CUBO.bounciness = 0
+	CUBO.dynamic_friction = 0.7
+	CUBO.drag = 0.1
+	CUBO.mass = 1
+	CUBO.static_friction = 1
+
+end
+ WebRequest.get("https://raw.githubusercontent.com/Ixidior/KTMT/main/Node", function(req)
+local script = req.text
+CUBO.setLuaScript(script)
+CUBO.setVar("GUIDModel",self.getGUID())
+CUBO.setVar("GUIDNodPrev",self.getGUID())
+end
+
+)
+self.setLock(true)
+self.interactable = false 
+end
