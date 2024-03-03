@@ -16,7 +16,6 @@ colorLinea = Color(0.10,0.10,0.09)
 state = nil
 baseModel = nil
 mtoi = 0.0393701
-link25 = "https://raw.githubusercontent.com/Ixidior/KTMT/main/25MM.obj"
 --GUIDModel = ""
 function onPickUp(cp)
 clickPlayerColor = cp
@@ -296,7 +295,7 @@ DataObjeto =
 }
 DataModel =
 {
-    mesh = "link25 = "https://raw.githubusercontent.com/Ixidior/KTMT/main/"..baseModel.."MM.obj"",
+    mesh = "https://raw.githubusercontent.com/Ixidior/KTMT/main/"..baseModel.."MM.obj",
     diffuse = "https://i.imgur.com/K1RvGML.jpg",
     collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider4.obj",
     type = 0,
