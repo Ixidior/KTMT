@@ -250,7 +250,7 @@ function onNumberTyped( pc, n )
 		agregaRuta()
 	else
 		objModel = getObjectFromGUID(GUIDModel)
-print(objModel)
+--print(objModel)
 		objModel.setPosition({x=self.getPosition().x,y=objModel.getPosition().y,z=self.getPosition().z},false)
 		objModel.setVelocity({0,0,0})
         	objModel.setAngularVelocity({0,0,0})
@@ -306,7 +306,7 @@ DataModel =
 if CUBO == nill then
 
         CUBO = spawnObject(DataObjeto)
-	print(CUBO.getGUID())
+	--print(CUBO.getGUID())
         CUBO.setCustomObject(DataModel)
 	CUBO.angular_drag = 0.1
 	CUBO.bounciness = 0
