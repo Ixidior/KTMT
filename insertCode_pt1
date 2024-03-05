@@ -25,7 +25,7 @@ DataModel =
 if CUBO == nill then
 
         CUBO = spawnObject(DataObjeto)
-	print(CUBO.getGUID())
+	--print(CUBO.getGUID())
         CUBO.setCustomObject(DataModel)
 	CUBO.angular_drag = 0.1
 	CUBO.bounciness = 0
