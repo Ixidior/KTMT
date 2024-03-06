@@ -251,7 +251,7 @@ function onNumberTyped( pc, n )
 	else
 		objModel = getObjectFromGUID(GUIDModel)
 --print(objModel)
-		objModel.setPosition({x=self.getPosition().x,y=objModel.getPosition().y,z=self.getPosition().z},false)
+		objModel.setPosition({x=self.getPosition().x,y=self.getPosition().y,z=self.getPosition().z},false)
 		objModel.setVelocity({0,0,0})
         	objModel.setAngularVelocity({0,0,0})
 		retira_Ruta_Chain()
