@@ -25,22 +25,15 @@ startLuaCoroutine(self, "movModel")
 end
 
 function movModel()
---print("entro")
---GUIDModel = "5c740c" --self.getDescription()
 objModel = getObjectFromGUID(GUIDNodPrev)
---print(objModel)
 posX = objModel.getPosition().x
 posZ = objModel.getPosition().z
 posY = objModel.getPosition().y
---print(posX)
---print(posZ)
 state = objModel.getTable("state")
 baseModel = objModel.getTable("state").base.x
---print(baseModel)
 
 maxX = posX + rngMov
 maxZ = posZ + rngMov
---print(posX.." | "..maxX.." | "..posZ.." | "..maxZ.." | "..rngMov)
 
 while (pickedUp == true) do
 posicionLock()
