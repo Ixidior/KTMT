@@ -273,9 +273,12 @@ pickedUp = true
 
 pickedUp = false
 self.setVectorLines(nil)
+print("TERMINO LOAD")
+print(GUIDModel)
 end
 
 function iniciaCono()
+print("entro inicia")
 startLuaCoroutine(self, "movModel")	
 end
 
