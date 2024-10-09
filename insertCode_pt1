@@ -1,4 +1,5 @@
 self.addContextMenuItem("Movement", function(pc)  agregaRuta() end)
+self.addContextMenuItem("Movement", function(pc)  agregaCono() end)
 --parte2
 function agregaRuta()
 --Actualizado KTMT
@@ -45,4 +46,53 @@ end
 )
 self.setLock(true)
 self.interactable = false 
+end
+
+function agregaCono()
+
+CONO = nill
+DataObjetoCono = 
+{
+    type = "Custom_Model",
+    scale = {1,1,1},
+    rotation = {0, 0, 0},
+    position = {0, 2, 0}
+}
+DataModelCono =
+{
+    mesh = "https://github.com/Ixidior/KTMT/blob/main/CONE.obj",
+    --diffuse = "https://i.imgur.com/K1RvGML.jpg",
+    --collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider4.obj",
+    type = 0,
+    material = 0,
+    specular_intensity = 0,
+	specular_sharpness = 7,
+	freshnel_strength = 0.4
+   
+}
+if CONO == nill then
+
+        CONO = spawnObject(DataObjetoCono)
+	--print(CUBO.getGUID())
+        CONO.setCustomObject(DataModelCono)
+	CONO.angular_drag = 0.1
+	CONO.bounciness = 0
+	CONO.dynamic_friction = 0.7
+	CONO.drag = 0.1
+	CONO.mass = 1
+	CONO.static_friction = 1
+
+end
+ WebRequest.get("https://github.com/Ixidior/KTMT/blob/main/ScriptCono", function(req)
+local script = req.text
+CONO.setLuaScript(script)
+CONO.setColorTint(Color.fromString(pc))
+CONO.setVar("GUIDModel",self.getGUID())
+end
+
+)
+self.setLock(true)
+self.interactable = false
+
+
 end
