@@ -1,5 +1,5 @@
 self.addContextMenuItem("Movement", function(pc)  agregaRuta() end)
-self.addContextMenuItem("Movement", function(pc)  agregaCono() end)
+self.addContextMenuItem("LOS", function(pc)  agregaCono() end)
 --parte2
 function agregaRuta()
 --Actualizado KTMT
