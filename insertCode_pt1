@@ -61,10 +61,8 @@ DataObjetoCono =
 DataModelCono =
 {
     mesh = "https://github.com/Ixidior/KTMT/blob/main/CONE.obj",
-    --diffuse = "https://i.imgur.com/K1RvGML.jpg",
-    --collider = "https://raw.githubusercontent.com/Ixidior/KTMT/main/collider4.obj",
-    diffuse = "",
-    collider = "",
+    diffuse = "https://i.imgur.com/K1RvGML.jpg",
+    collider = "https://github.com/Ixidior/KTMT/blob/main/CONE.obj",
     type = 0,
     material = 0,
     specular_intensity = 0,
