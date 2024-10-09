@@ -86,7 +86,7 @@ end
  WebRequest.get("https://raw.githubusercontent.com/Ixidior/KTMT/refs/heads/main/ScriptCono", function(req)
 local script = req.text
 CONO.setLuaScript(script)
-CONO.setColorTint(Color.fromString(pc))
+--CONO.setColorTint(Color.fromString(pc))
 print(self.getGUID())
 CONO.setVar("GUIDModel",self.getGUID())
 end
