@@ -60,7 +60,7 @@ DataObjetoCono =
 }
 DataModelCono =
 {
-    mesh = "https://github.com/Ixidior/KTMT/blob/main/CONE.obj",
+    mesh = "https://raw.githubusercontent.com/Ixidior/KTMT/refs/heads/main/CONE.obj",
     diffuse = "https://i.imgur.com/K1RvGML.jpg",
     collider = "https://github.com/Ixidior/KTMT/blob/main/CONE.obj",
     type = 0,
