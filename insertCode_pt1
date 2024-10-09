@@ -81,6 +81,7 @@ if CONO == nill then
 	CONO.drag = 0.1
 	CONO.mass = 1
 	CONO.static_friction = 1
+	CONO.use_gravity = 0
 
 end
  WebRequest.get("https://raw.githubusercontent.com/Ixidior/KTMT/refs/heads/main/ScriptCono", function(req)
