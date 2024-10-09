@@ -35,7 +35,7 @@ end
 
 function movModel()
 --print("entro")
-GUIDModel = "5c740c" --self.getDescription()
+--GUIDModel = "5c740c" --self.getDescription()
 objModel = getObjectFromGUID(GUIDModel)
 --print(objModel)
 posX = objModel.getPosition().x
