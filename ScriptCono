@@ -106,7 +106,7 @@ self.setPosition({x=newX, y=posY, z=newZ})
 self.setVelocity({0,0,0})
 self.setAngularVelocity({0,0,0})
 self.setRotation({0,0,0})
-self.setDescription("X:"..newX.."|Z:"..newZ.."|Y:"..posY-posY)
+--self.setDescription("X:"..newX.."|Z:"..newZ.."|Y:"..posY-posY)
 refrescaVectores()
 end
 end	
@@ -251,9 +251,9 @@ function onNumberTyped( pc, n )
 	elseif n == 7 then
 		
 	elseif n == 8 then
-		print("quita step")
+		
 	elseif n == 9 then
-		print("suma step")
+		
 	else
 		objModel = getObjectFromGUID(GUIDModel)
 		print(objModel)
@@ -282,7 +282,7 @@ cat1 = objModel.getPosition().x-ObjMiniTarget.getPosition().x
 --print(cat1)
 cat2 = objModel.getPosition().z-ObjMiniTarget.getPosition().z
 --print(cat2)
-cat3 = objModel.getPosition().y-ObjMiniTarget.getPosition().y 
+cat3 = objModel.getPosition().y-objModel.getBounds().offset.y-ObjMiniTarget.getPosition().y-ObjMiniTarget.getBounds().offset.y
 --print(cat3)
 lhip = math.sqrt((cat1*cat1)+(cat2*cat2))-((objModel.getTable("state").base.x+ObjMiniTarget.getTable("state").base.x)*mtoi*0.5)
 --print(lhip)
