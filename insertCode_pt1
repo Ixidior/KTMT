@@ -88,7 +88,7 @@ end
 local script = req.text
 CONO.setLuaScript(script)
 --CONO.setColorTint(Color.fromString(pc))
-print(self.getGUID())
+--print(self.getGUID())
 CONO.setVar("GUIDModel",self.getGUID())
 end
 
