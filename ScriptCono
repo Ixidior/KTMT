@@ -293,7 +293,11 @@ end
 
 function tryRandomize(pc)
   estado_cono = 1
-  print("seleccione objetivo")
+  --print("seleccione objetivo")
+ msg = "Select Target for LOS"
+color = pc
+rgb = {r=1, g=1, b=1}
+broadcastToColor(msg, color, rgb)
   return false
 end
 
