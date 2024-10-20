@@ -256,7 +256,7 @@ function onNumberTyped( pc, n )
 		
 	else
 		objModel = getObjectFromGUID(GUIDModel)
-		print(objModel)
+		--print(objModel)
 
 		self.destruct()
 	end
@@ -299,8 +299,8 @@ end
 
 function onObjectPickUp(selfpc, targetObj)
   if estado_cono == 1 then
-    print(targetObj.getGUID())
-    print(targetObj.getPosition())
+    --print(targetObj.getGUID())
+    --print(targetObj.getPosition())
     ObjMiniTarget = targetObj
     targetConoX = targetObj.getPosition().x
     targetConoY = targetObj.getPosition().y
