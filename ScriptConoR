@@ -52,7 +52,7 @@ maxZ = posZ + rngMov
 --print(posX.." | "..maxX.." | "..posZ.." | "..maxZ.." | "..rngMov)
 
 while (pickedUp == true) do
-posicionLock()
+--posicionLock()
 coroutine.yield(0)
 end
 return 1
