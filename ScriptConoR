@@ -321,13 +321,13 @@ end
 
 
 function refrescaTextoRango()
-cat1 = objModel.getPosition().x-ObjMiniTarget.getPosition().x
+cat1 = ObjMiniTarget.getPosition().x-self.getPosition().x
 --print(cat1)
-cat2 = objModel.getPosition().z-ObjMiniTarget.getPosition().z
+cat2 = ObjMiniTarget.getPosition().z-self.getPosition().z
 --print(cat2)
-cat3 = objModel.getPosition().y-objModel.getBounds().offset.y-ObjMiniTarget.getPosition().y-ObjMiniTarget.getBounds().offset.y
+cat3 = ObjMiniTarget.getPosition().y-ObjMiniTarget.getBounds().offset.y-self.getPosition().y-self.getBounds().offset.y
 --print(cat3)
-lhip = math.sqrt((cat1*cat1)+(cat2*cat2))-((objModel.getTable("state").base.x+ObjMiniTarget.getTable("state").base.x)*mtoi*0.5)
+lhip = math.sqrt((cat1*cat1)+(cat2*cat2))-((ObjMiniTarget.getTable("state").base.x))
 --print(lhip)
 hip = math.sqrt((lhip*lhip)+(cat3*cat3))
 hip=math.ceil(hip)
