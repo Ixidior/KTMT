@@ -37,6 +37,7 @@ function movModel()
 --print("entro")
 --GUIDModel = "5c740c" --self.getDescription()
 objModel = getObjectFromGUID(GUIDModel)
+
 --print(objModel)
 posX = objModel.getPosition().x
 posZ = objModel.getPosition().z
@@ -302,7 +303,7 @@ function onNumberTyped( pc, n )
 end
 
 function onLoad(ls)
-    ObjMiniTarget = GUIDModel
+    ObjMiniTarget = getObjectFromGUID(GUIDModel)
     estado_cono = 2
     refrescaVectores()
 self.max_typed_number=9
