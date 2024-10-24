@@ -75,11 +75,11 @@ if CONO == nill then
         CONO = spawnObject(DataObjetoCono)
 	--print(CUBO.getGUID())
         CONO.setCustomObject(DataModelCono)
-	CONO.angular_drag = 0.1
+	CONO.angular_drag = 120
 	CONO.bounciness = 0
-	CONO.dynamic_friction = 0.7
-	CONO.drag = 0.1
-	CONO.mass = 1
+	CONO.dynamic_friction = 1
+	CONO.drag = 120
+	CONO.mass = 10
 	CONO.static_friction = 1
 	CONO.use_gravity = false
 
