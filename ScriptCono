@@ -160,55 +160,93 @@ function refrescaVectores()
 	sX=math.min(XA1,XA2)
 	sZ=math.min(ZA1,ZA2)
 	--print("("..sX..","..sZ..")")
+	Cx=sX-0
+	Cz=sZ-0
+	Cy=pY-(-0.45)
+	mag1 = math.sqrt((Cx*Cx)+(Cy*Cy)+(Cz*Cz))
+	Dx = Cx/mag1
+	Dy = Cy/mag1
+	Dz = Cz/mag1
+	pfX = sX + (lambda*Dx)
+	pfY = pY + (lambda*Dy)
+	pfZ = sZ + (lambda*Dz)
 	table.insert(result,{
-            x = sX,
-            z = sZ,
-            --y = 0.1 --posY+1
-	    y =pY
+            x = pfX,
+            z = pfZ,
+            y = pfY
         })
 	sX=math.min(XB1,XB2)
 	sZ=math.min(ZB1,ZB2)
 	--print("("..sX..","..sZ..")")
 	table.insert(result,{
-            x = sX,
-            z = sZ,
+            x = 0,
+            z = 0,
             y = -0.45
         })
 
 	sX=math.max(XA1,XA2)
 	sZ=math.max(ZA1,ZA2)
 	--print("("..sX..","..sZ..")")
+	Cx=sX-0
+	Cz=sZ-0
+	Cy=pY-(-0.45)
+	mag1 = math.sqrt((Cx*Cx)+(Cy*Cy)+(Cz*Cz))
+	Dx = Cx/mag1
+	Dy = Cy/mag1
+	Dz = Cz/mag1
+	pfX = sX + (lambda*Dx)
+	pfY = pY + (lambda*Dy)
+	pfZ = sZ + (lambda*Dz)
 	table.insert(result,{
-            x = sX,
-            z = sZ,
-            --y = 0.1--posY+1
-	    y =pY
+            x = pfX,
+            z = pfZ,
+            y = pfY
         })
 	else
 	sX=math.max(XA1,XA2)
 	sZ=math.min(ZA1,ZA2)
 	--print("("..sX..","..sZ..")")
+	Cx=sX-0
+	Cz=sZ-0
+	Cy=pY-(-0.45)
+	mag1 = math.sqrt((Cx*Cx)+(Cy*Cy)+(Cz*Cz))
+	Dx = Cx/mag1
+	Dy = Cy/mag1
+	Dz = Cz/mag1
+	pfX = sX + (lambda*Dx)
+	pfY = pY + (lambda*Dy)
+	pfZ = sZ + (lambda*Dz)
 	table.insert(result,{
-            x = sX,
-            z = sZ,
-            y =pY
+            x = pfX,
+            z = pfZ,
+            y = pfY
         })
 	sX=math.max(XB1,XB2)
 	sZ=math.min(ZB1,ZB2)
 	--print("("..sX..","..sZ..")")
 	table.insert(result,{
-            x = sX,
-            z = sZ,
+            x = 0,
+            z = 0,
             y = -0.45
         })
 
 	sX=math.min(XA1,XA2)
 	sZ=math.max(ZA1,ZA2)
 	--print("("..sX..","..sZ..")")
+	Cx=sX-0
+	Cz=sZ-0
+	Cy=pY-(-0.45)
+	mag1 = math.sqrt((Cx*Cx)+(Cy*Cy)+(Cz*Cz))
+	Dx = Cx/mag1
+	Dy = Cy/mag1
+	Dz = Cz/mag1
+	pfX = sX + (lambda*Dx)
+	pfY = pY + (lambda*Dy)
+	pfZ = sZ + (lambda*Dz)
 	table.insert(result,{
-            x = sX,
-            z = sZ,
-            y = pY
+            x = pfX,
+            z = pfZ,
+            y = pfY
         })
 	end
 
