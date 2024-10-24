@@ -52,7 +52,7 @@ maxZ = posZ + rngMov
 --print(posX.." | "..maxX.." | "..posZ.." | "..maxZ.." | "..rngMov)
 
 while (pickedUp == true) do
---posicionLock()
+posicionLock()
 coroutine.yield(0)
 end
 return 1
@@ -86,7 +86,7 @@ function posicionLock()
 				newX = SX
 				newZ = SZ
 				--print("X:"..mouseX.."|newX:"..newX.."|Z:"..mouseZ.."|newZ:"..newZ)
-				self.setPosition({x=newX, y=posY, z=newZ})
+				--self.setPosition({x=newX, y=posY, z=newZ})
 				self.setVelocity({0,0,0})
         			self.setAngularVelocity({0,0,0})
 				--Wait.frames(function() print("corrigio") end, 5)
