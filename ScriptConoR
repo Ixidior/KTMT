@@ -305,7 +305,7 @@ end
 function onLoad(ls)
     ObjMiniTarget = getObjectFromGUID(GUIDModel)
     estado_cono = 2
-    refrescaVectores()
+    --refrescaVectores()
 self.max_typed_number=9
 rngMov=3
 txtMax = "\n(max 1'')"
