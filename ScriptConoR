@@ -102,7 +102,7 @@ end
 function onDropped(cp)
 if pickedUp == true then
 pickedUp = false
-self.setPosition({x=newX, y=posY, z=newZ})
+--self.setPosition({x=newX, y=posY, z=newZ})
 self.setVelocity({0,0,0})
 self.setAngularVelocity({0,0,0})
 self.setRotation({0,0,0})
