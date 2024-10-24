@@ -112,6 +112,7 @@ end
 end	
 
 function refrescaVectores()
+lambda = 1
     if estado_cono == 2 then
 	result = {}
 	newLines = {}
