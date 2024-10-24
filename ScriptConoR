@@ -302,6 +302,9 @@ function onNumberTyped( pc, n )
 end
 
 function onLoad(ls)
+    ObjMiniTarget = GUIDModel
+    estado_cono = 2
+    refrescaVectores()
 self.max_typed_number=9
 rngMov=3
 txtMax = "\n(max 1'')"
