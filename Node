@@ -282,7 +282,7 @@ DataObjeto =
     type = "Custom_Model",
     scale = {1,1,1},
     rotation = {0, 0, 0},
-    position = {0, 2, 0}
+    position = {85, 2, 100}
 }
 DataModel =
 {
